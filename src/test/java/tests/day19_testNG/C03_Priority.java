@@ -38,19 +38,19 @@ public class C03_Priority {
     WebDriver driver;
 
     @BeforeClass
-    public void setup(){
+    public void setup() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterClass
-    public void teardown(){
+    public void teardown() {
         driver.quit();
     }
 
     @Test // priority = 0
-    public void anasayfaTesti(){
+    public void anasayfaTesti() {
         // 1. Testotomasyonu anasayfaya gidip, url'in testotomasyonu icerdigini test edin
 
         driver.get("https://www.testotomasyonu.com");
@@ -62,7 +62,7 @@ public class C03_Priority {
     }
 
     @Test // priority = 0
-    public void phoneAramaTesti(){
+    public void phoneAramaTesti() {
         // 2. phone icin arama yapip, arama sonucunda urun bulunabildigini test edin
 
         // phone icin arama yapin
@@ -75,11 +75,11 @@ public class C03_Priority {
         String unexpectedSonucYazisi = "0 Products Found";
         String actualSonucYazisi = sonucYaziElementi.getText();
 
-        Assert.assertNotEquals(actualSonucYazisi,unexpectedSonucYazisi);
+        Assert.assertNotEquals(actualSonucYazisi, unexpectedSonucYazisi);
     }
 
     @Test(priority = 20)
-    public void ilkUrunIsimTesti(){
+    public void ilkUrunIsimTesti() {
         // 3. ilk urunu tiklayip,
         driver.findElement(By.xpath("(//*[@class='prod-img'])[1]"))
                 .click();
@@ -94,9 +94,5 @@ public class C03_Priority {
                 .toLowerCase();
 
         Assert.assertTrue(actualIsim.contains(expectedIsimIcerik));
-
-
     }
-
-
 }
