@@ -27,5 +27,8 @@ public class C07_DinamikNegatifLoginTesti {
 
         //5- Basarili olarak giris yapilamadigini test edin
         Assert.assertTrue(testotomasyonuPage.emailKutusu.isDisplayed());
+
+
+        Driver.quitDriver();
     }
 }
