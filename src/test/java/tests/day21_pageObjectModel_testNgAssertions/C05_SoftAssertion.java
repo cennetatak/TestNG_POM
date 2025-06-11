@@ -3,8 +3,8 @@ package tests.day21_pageObjectModel_testNgAssertions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.ZeroWebappPage;
-import utillities.ConfigReader;
-import utillities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class C05_SoftAssertion {
 

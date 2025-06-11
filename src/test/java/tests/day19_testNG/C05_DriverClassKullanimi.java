@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utillities.Driver;
+import utilities.Driver;
 
 public class C05_DriverClassKullanimi {
 

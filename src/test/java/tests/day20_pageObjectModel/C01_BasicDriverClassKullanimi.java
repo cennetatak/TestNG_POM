@@ -2,7 +2,7 @@ package tests.day20_pageObjectModel;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utillities.Driver;
+import utilities.Driver;
 
 public class C01_BasicDriverClassKullanimi {
 

@@ -4,7 +4,7 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.TestotomasyonuPage;
-import utillities.Driver;
+import utilities.Driver;
 
 public class C02_PageClassKullanimi {
 

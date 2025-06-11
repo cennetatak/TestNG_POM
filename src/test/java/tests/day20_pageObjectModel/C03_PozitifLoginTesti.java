@@ -5,8 +5,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.TestotomasyonuPage;
-import utillities.Driver;
-import utillities.ReusableMethods;
+import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C03_PozitifLoginTesti {
 

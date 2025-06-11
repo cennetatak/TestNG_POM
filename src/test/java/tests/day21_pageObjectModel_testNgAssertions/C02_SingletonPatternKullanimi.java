@@ -1,8 +1,8 @@
 package tests.day21_pageObjectModel_testNgAssertions;
 
 import org.testng.annotations.Test;
-import utillities.Driver;
-import utillities.ReusableMethods;
+import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C02_SingletonPatternKullanimi {
 
